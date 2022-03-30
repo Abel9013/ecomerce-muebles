@@ -8,12 +8,20 @@ html {
 /* Globales */
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
 }
 
 
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
 }
 h3{
     font-size: 3rem;
@@ -26,17 +34,31 @@ img{
     max-width: 100%;
     display: block;/* Para cubrir todo el alto */
 }
+.btn {
+    background-color: #8cbc00;
+    color: white;
+    display: block;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+.btn:hover {
+    background-color: #769c02;
+}
+/* Utilidades */
+.text-center{
+    text-align: center;
+}
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
 }
-.nombre-sitio{
-    font-size: 4rem;
+/* Header y Navegacion */
+.nombre-sitio {
     margin-top: 5rem;
-    margin-bottom: 5rem;
     text-align: center;
 }
-.nombre-sitio span{
+.nombre-sitio span {
     color: #037bc0;
 }
 .contenedor-navegacion{
@@ -56,12 +78,16 @@ img{
     background-image: url("../img/principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 55rem;
 }
 .listado-categorias{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
+}
+.categorias{
+    padding-top: 5rem;
 }
 .categorias h2{
     text-align: center;
@@ -79,3 +105,50 @@ img{
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
+/* Sobre nosotros */
+.sobre-nosotros{
+    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%),url("../img/nosotros.jpg");
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;/* 100% para el lineal gradient y 120rem paraa la img */
+}
+.sobre-nosotros-grid {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem; */
+    display: flex;
+    justify-content: flex-end;
+}
+.texto-sobrenosotros {
+    /* grid-column: 2/3; */
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color: white;
+}
+/* Listado de productos */
+.contenido-ppal {
+    padding-top: 5rem;
+}
+.productos{
+    background-color: #037bc0;
+}
+.texto-producto{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.texto-producto h3{
+    margin: 0;
+}
+.texto-producto p{
+    margin: 0 0 0.5rem 0;
+}
+.texto-producto .precio{
+    font-size: 2rem;
+    font-weight: 900;
+}
+/* .productos img:hover {
+    transform: scale()
+
+} */
