@@ -119,11 +119,15 @@ img{
 
 /** Categorias **/
 .categorias{  
-    padding: 5rem 0;
+    padding: 5rem 0 0;
 }
 .categoria {
     margin-bottom: 2rem;
 }
+/* .categoria :last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+} */
 @media (min-width: 768px) {
     .categoria {
         margin-bottom: 0;
