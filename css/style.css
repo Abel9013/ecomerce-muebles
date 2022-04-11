@@ -121,6 +121,11 @@ img{
 .categorias{  
     padding: 5rem 0 0;
 }
+@media (min-width: 768px) { 
+    .categorias{  
+        padding: 5rem 0 ;
+    }
+}
 .categoria {
     margin-bottom: 2rem;
 }
